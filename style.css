@@ -1,45 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --tenne-tawny: #242323;
     --tenne-tawny-dark: #1f1c1b;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     outline: 0;
     font-size: 1.05rem;
 }
-.text{
+
+.text {
     opacity: 0.8;
 }
-.title{
+
+.title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-/*  */
-.container{
+/* Meal list  */
+.container {
     min-height: 100vh;
 }
-.meal-wrapper{
+
+.meal-wrapper {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     background: #fff;
     text-align: center;
 }
-.meal-search{
+
+.meal-search {
     margin: 2rem 0;
 }
+
 .search-control,
-.search-btn{
-    width:50%;
+.search-btn {
+    width: 50%;
 }
-.search-control{
+
+.search-control {
     padding: 0 1rem;
     font-size: 1.1rem;
     height: 35px;
@@ -49,10 +56,12 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.search-control::placeholder{
+
+.search-control::placeholder {
     color: var(--tenne-tawny);
 }
-.search-btn{
+
+.search-btn {
     width: 70px;
     height: 40px;
     color: #fff;
@@ -61,13 +70,15 @@
     margin-left: -4px;
 }
 
-.meal-result{
+.meal-result {
     margin-top: 4rem;
 }
-#meal{
+
+#meal {
     margin: 2.4rem 0;
 }
-.meal-item{
+
+.meal-item {
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -77,59 +88,69 @@
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
 }
-.meal-img img{
+
+.meal-img img {
     width: 100%;
     display: block;
 }
-.meal-name{
+
+.meal-name {
     padding: 1.5rem 0.5rem;
 }
-.meal-name h3{
+
+.meal-name h3 {
     font-size: 1.4rem;
 }
 
 
 /* Not found */
-.notFound{
-    grid-template-columns: 1fr!important;
+.notFound {
+    grid-template-columns: 1fr !important;
     color: var(--tenne-tawny);
     font-size: 1.8rem;
     font-weight: 600;
     width: 100%;
 }
-.meal-details-img img{
+
+/*👉Meal details👈*/
+.meal-details-img img {
     width: 30%;
 }
-.ingredients{
+
+.ingredients {
     display: inline-block;
     text-align: center;
 }
-.list-of-recipes h5{
+
+.list-of-recipes h5 {
     text-decoration: underline;
     margin-bottom: -3px;
 }
-.list-of-recipes ul li{
+
+.list-of-recipes ul li {
     text-align: left;
 }
 
-/* Media Queries */
+/* Media Queries  */
 
-@media screen and (min-width: 768px){
-    #meal{
+@media screen and (min-width: 768px) {
+    #meal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .meal-item{
+
+    .meal-item {
         margin: 0;
     }
-    .meal-details{
+
+    .meal-details {
         width: 700px;
     }
 }
 
-@media screen and (min-width: 992px){
-    #meal{
+@media screen and (min-width: 992px) {
+    #meal {
         grid-template-columns: repeat(3, 1fr);
     }
 }
