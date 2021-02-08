@@ -97,6 +97,20 @@
     font-weight: 600;
     width: 100%;
 }
+.meal-details-img img{
+    width: 30%;
+}
+.ingredients{
+    display: inline-block;
+    text-align: center;
+}
+.list-of-recipes h5{
+    text-decoration: underline;
+    margin-bottom: -3px;
+}
+.list-of-recipes ul li{
+    text-align: left;
+}
 
 /* Media Queries */
 
